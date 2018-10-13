@@ -1065,7 +1065,7 @@ span.price {
     text-align: center;
     width: inherit;
     text-transform: none;
-    speak: none;
+    /* speak: none; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -6823,7 +6823,7 @@ nav.nav-menu-burger .menu > li li {
 
 .g_product_grid_style-3 .product_item--info .product_item--action {
     display: inline-block;
-    float: right;
+    /* float: right; */
 }
 
 .g_product_grid_style-3 .product_item--inner:hover .product_item--info {
@@ -9004,7 +9004,7 @@ aside#sidebar_primary .sidebar-inner .widget_layered_nav:not(.widget_layered_nav
     font-size: 15px;
     display: block;
     color: #fff;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   	background-color: #606da6;
     border-radius: 50%;
     transition: all 250ms ease-out;
@@ -9691,7 +9691,7 @@ div.quantity .qty {
     text-align: center;
     width: inherit;
     text-transform: none;
-    speak: none;
+    /* speak: none; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -10876,9 +10876,9 @@ h3.three-font-family {
 
 .alignleft {
     display: inline;
-    float: left;
+    /* float: left; */
     margin-right: 2em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 blockquote p {
@@ -11991,7 +11991,7 @@ a.add_wishlist.button.la-core-wishlist.swym-added {
     padding-top: 10px;
     display: block;
     font-size: 16px;
-    color: ;
+    /* color: ; */
     font-weight: 400;
 }
 
