@@ -1,45 +1,35 @@
 import React, { Component } from 'react';
-
+import Banner from './Banner';
+const styles={
+    yellow:{
+        textIndent: "-9999px",
+        width: "30px",
+        height: "30px",
+        backgroundColor: "Yellow",
+    },
+    blue:{
+        textIndent: "-9999px",
+        width: "30px",
+        height: "30px",
+        backgroundColor: "#9bbfda",
+    },
+    pink:{
+        textIndent: "-9999px",
+        width: "30px",
+        height: "30px",
+        backgroundColor: "Pink",
+    },
+    image:{
+        display: "block",
+    }
+}
 class PageContainer extends Component {
     render() {
         return (
             <div>
                 <div className="page-container" id="PageContainer">
-                    <main className="main-content" id="MainContent" role="main">
-                        <div className="vc_row wpb_row vc_row-fluid section-page-header" 
-                        //style="background-image: url(//cdn.shopify.com/s/files/1/0017/9653/8437/collections/banner-category_9ddbdc39-5563-438a-835c-f192d4338bf5_1920x.jpg?v=1536541777);"
-                        >
-                            <div className="container">
-                                <div className="page-header-inner wow fadeIn" 
-                                //style="visibility: visible; animation-name: fadeIn;"
-                                >
-                                    <div className="row">
-                                        <div className="col-xs-12">
-                                            <header>
-                                                <h1>All</h1>
-                                            </header>
-                                            <div className="la-breadcrumbs hidden-xs">
-                                                <div>
-                                                    <div className="la-breadcrumb-content">
-                                                        <div className="la-breadcrumb-wrap">
-                                                            <div className="la-breadcrumb-item"><a href="https://hebes-globo.myshopify.com" className="la-breadcrumb-item-link is-home" rel="home" title="hebes-globo">Home</a></div>
-                                                            <div className="la-breadcrumb-item">
-                                                                <div className="la-breadcrumb-item-sep"><i className="icon dl-icon-right"></i></div>
-                                                            </div>
-                                                            <div className="la-breadcrumb-item">
-                                                                <span className="la-breadcrumb-item-target">
-                                                                    All
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <main className="main-content" id="MainContent" role="main">                        
+                        <Banner />                        
                         <div className="container">
                             <div className="collection-sidebar row">
                                 <aside id="sidebar_primary" className="col-md-3 col-xs-12">
@@ -84,23 +74,17 @@ class PageContainer extends Component {
                                                 <h4 className="widget-title"><span>Shop By Color</span></h4><ul className="la-swatches-widget-opts"><li className="wc-layered-nav-term">
                                                     <a href="/collections/all/pink">
                                                         <div className="select-option swatch-wrapper la-swatch-item-style-default" data-attribute="pa_color" data-value="pink">
-                                                        <span className="swatch-anchor g-bg-color-pink globo-swatch-pink" 
-                                                        //style="text-indent:-9999px;width:30px;height:30px;background-color:Pink;" 
-                                                        title="Pink">Pink</span><span className="swatch-anchor-label">Pink</span></div>
+                                                        <span className="swatch-anchor g-bg-color-pink globo-swatch-pink" style={styles.pink} title="Pink">Pink</span><span className="swatch-anchor-label">Pink</span></div>
                                                     </a>
                                                 </li><li className="wc-layered-nav-term">
                                                         <a href="/collections/all/yellow">
                                                             <div className="select-option swatch-wrapper la-swatch-item-style-default" data-attribute="pa_color" data-value="yellow">
-                                                            <span className="swatch-anchor g-bg-color-yellow globo-swatch-yellow" 
-                                                            //style="text-indent:-9999px;width:30px;height:30px;background-color:Yellow;" 
-                                                            title="Yellow">Yellow</span><span className="swatch-anchor-label">Yellow</span></div>
+                                                            <span className="swatch-anchor g-bg-color-yellow globo-swatch-yellow" style={styles.yellow} title="Yellow">Yellow</span><span className="swatch-anchor-label">Yellow</span></div>
                                                         </a>
                                                     </li><li className="wc-layered-nav-term">
                                                         <a href="/collections/all/blue">
                                                             <div className="select-option swatch-wrapper la-swatch-item-style-default" data-attribute="pa_color" data-value="blue">
-                                                            <span className="swatch-anchor g-bg-color-blue globo-swatch-blue" 
-                                                            //style="text-indent:-9999px;width:30px;height:30px;background-color:Blue;" 
-                                                            title="Blue">Blue</span><span className="swatch-anchor-label">Blue</span></div>
+                                                                <span className="swatch-anchor g-bg-color-blue globo-swatch-blue" style={styles.blue} title="Blue">Blue</span><span className="swatch-anchor-label">Blue</span></div>
                                                         </a>
                                                     </li></ul></div>
                                             <div id="Filter-other-1531211367403" className="widget widget_layered_nav">
@@ -175,7 +159,7 @@ class PageContainer extends Component {
                                                     >
                                                         <div className="image">
                                                             <a href="/collections/accessories/products/globo-hebes-chair" tabIndex="-1">
-                                                                {/* <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/t/36/assets/pixel.gif?6606624414261653917" alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg?v=1534408109" /> */}
+                                                                <img className="wp-post-image loading lazy" src={"https://cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-1_large.jpg?v=1534407812"} alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg" /> 
                                                             </a>
                                                             </div>
                                                                 <div className="excerpt">
@@ -191,7 +175,7 @@ class PageContainer extends Component {
                                                             >
                                                             <div className="image">
                                                                 <a href="/collections/accessories/products/hebes-cool-bed" tabIndex="-1">
-                                                                    <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/t/36/assets/pixel.gif?6606624414261653917" alt="Hebes Cool Bed" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-1_medium.jpg?v=1536216107"/>
+                                                                    <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/t/36/assets/pixel.gif" alt="Hebes Cool Bed" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-1_medium.jpg?v=1536216107"/>
                                                                 </a>
                                                             </div>
                                                                 <div className="excerpt">
@@ -234,7 +218,7 @@ class PageContainer extends Component {
                                                                     >
                                                                         <div className="image">
                                                                             <a href="/collections/accessories/products/globo-hebes-chair" tabIndex="-1">
-                                                                                <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/t/36/assets/pixel.gif?6606624414261653917" alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg?v=1534408109"/>
+                                                                                <img className="wp-post-image loading lazy" src={"https://cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-1_large.jpg?v=1534407812"} alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg?v=1534408109"/>
                                                                             </a>
                                                                             </div>
                                                                             <div className="excerpt">
@@ -293,7 +277,7 @@ class PageContainer extends Component {
                                                                                     >
                                                                                         <div className="image">
                                                                                             <a href="/collections/accessories/products/globo-hebes-chair" tabIndex="-1">
-                                                                                                <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/t/36/assets/pixel.gif?6606624414261653917" alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg?v=1534408109"/>
+                                                                                                <img className="wp-post-image loading lazy" src={"https://cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-1_large.jpg?v=1534407812"} alt="Globo Hebes Chair" data-src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-7-1_medium.jpg?v=1534408109"/>
   </a>
 </div>
                                                                                             <div className="excerpt">
@@ -341,42 +325,22 @@ class PageContainer extends Component {
                                                                         <div className="wc-ordering">
                                                                             <p>Sort by</p>
                                                                             <ul>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=manual">Featured</a></li>
-
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=title-ascending">Alphabetically, A-Z</a></li>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=title-descending">Alphabetically, Z-A</a></li>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=price-ascending">Price, low to high</a></li>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=price-descending">Price, high to low</a></li>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=created-descending">Date, new to old</a></li>
-
-
                                                                                 <li className=""><a href="/collections/all?sort_by=created-ascending">Date, old to new</a></li>
-
-
                                                                             </ul>
                                                                         </div>
-
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                             <div id="la_shop_products" className="la-shop-products">
                                                                 <div className="row">
                                                                     <div className="col-xs-12">
                                                                         <ul className="products products-grid grid-space-default products-grid-1 grid-items xlg-grid-3-items lg-grid-3-items md-grid-3-items sm-grid-2-items xs-grid-1-items mb-grid-1-items" data-item_selector=".product_item" data-item_margin="30" data-item-width="270" data-item-height="390" data-md-col="3" data-sm-col="2" data-xs-col="1" data-mb-col="1">
-
                                                                             <div className="grid-item product_item wow fadeInUp" 
                                                                             // style="visibility: visible; animation-name: fadeInUp;"
                                                                             >
@@ -384,8 +348,8 @@ class PageContainer extends Component {
                                                                                     <div className="product_item--thumbnail">
                                                                                         <div className="product_item--thumbnail-holder">
                                                                                             <a href="/collections/all/products/hebes-beauty-chair" className="product__link" tabIndex="0">
-                                                                                                {/* <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-1_large.jpg?v=1534407812" alt="Hebes Beauty Chair" style="display: block;"/>
-                                                                                                <img className="wp-alt-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-2_large.jpg?v=1534407813" alt="Hebes Beauty Chair" style="display: block;"/> */}
+                                                                                                <img className="wp-post-image loading lazy" src={"https://cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-1_large.jpg?v=1534407812"} alt="Hebes Beauty Chair" style={styles.image}/>
+                                                                                                <img className="wp-alt-image loading lazy" src={"//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-8-2_large.jpg?v=1534407813"} alt="Hebes Beauty Chair" style={styles.image}/>
                                                                                             </a>
                                                                                         </div>
                                                                                     </div>
@@ -396,10 +360,8 @@ class PageContainer extends Component {
                                                                                                     </h2>
                                                                                                     <span className="price"><span className="money" data-currency-usd="$45.00" data-currency-cad="$58.64 CAD" data-currency="CAD">$58.64 CAD</span>
                                                                                                     </span>
-                                                                                                    <div className="short-description">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestibulum imperdiet nibh vel magna...
-</div>
+                                                                                                    <div className="short-description">Sed id interdum urna. Nam ac elit a ante commodo tristique. condimentum vehicula a hendrerit ac nisi. hendrerit ac nisi Lorem ipsum dolor sit amet Vestibulum imperdiet nibh vel magna...</div>
                                                                                                 </div>
-
                                                                                                 <div className="product_item_thumbnail_action product_item--action product_item_thumbnail_action-1">
                                                                                                     <div className="wrap-addto">
                                                                                                         <a href="/?add-to-cart=12743081558085" className="globo-add-to-cart" rel="nofollow" tabIndex="0" title="Add to cart" onclick=" Shopify.addItem('12743081558085', 1); return false"><span>Add to cart</span></a>
@@ -433,7 +395,8 @@ class PageContainer extends Component {
                                                                                             <div className="product_item--thumbnail">
                                                                                                 <div className="product_item--thumbnail-holder">
                                                                                                     <a href="/collections/all/products/hebes-cool-bed" className="product__link" tabIndex="0">
-                                                                                                        {/* <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-1_large.jpg?v=1536216107" alt="Hebes Cool Bed" style="display: block;"><img className="wp-alt-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-2_large.jpg?v=1536216107" alt="Hebes Cool Bed" style="display: block;"/> */}
+                                                                                                        <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-1_large.jpg?v=1536216107" alt="Hebes Cool Bed" style={styles.image}/>
+                                                                                                        <img className="wp-alt-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-9-2_large.jpg?v=1536216107" alt="Hebes Cool Bed" style={styles.image}/>
 </a>
 </div>
 
@@ -482,11 +445,11 @@ class PageContainer extends Component {
                                                                                                     <div className="product_item--thumbnail">
                                                                                                         <div className="product_item--thumbnail-holder">
                                                                                                             <a href="/collections/all/products/hebes-great-chair" className="product__link" tabIndex="0">
-                                                                                                                {/* <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-1-1_large.jpg?v=1533616230" alt="Hebes Great Chair" style="display: block;"><img className="wp-alt-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-1-5_large.jpg?v=1533616234" alt="Hebes Great Chair" style="display: block;"> */}
-</a>
-</div>
-
-</div>
+                                                                                                                <img className="wp-post-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-1-1_large.jpg?v=1533616230" alt="Hebes Great Chair" style={styles.image}/>
+                                                                                                                <img className="wp-alt-image loading lazy" src="//cdn.shopify.com/s/files/1/0017/9653/8437/products/p-d-1-5_large.jpg?v=1533616234" alt="Hebes Great Chair" style={styles.image}/>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                             <div className="product_item--info ">
                                                                                                                 <div className="product_item--info-inner text-center">
                                                                                                                     <h2 className="product_item--title">

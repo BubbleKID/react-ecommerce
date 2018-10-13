@@ -12,6 +12,26 @@ const styles={
 }
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            hover: false,
+        }
+        this.onMouseEnter = this.onMouseEnter.bind(this);
+        this.onMouseLeave = this.onMouseLeave.bind(this);
+    }
+
+    onMouseEnter() {
+        this.setState({
+            hover: true,
+        });
+    }
+
+    onMouseLeave() {
+        this.setState({
+            hover: false,
+        })
+    }
     render() {
         return (
             <div>
@@ -28,10 +48,11 @@ class Header extends Component {
                                                         <img src={logo} alt="hebes-globo" itemProp="logo"/>
                                                     </figure>
                                                     <figure className="logo--transparency">
-                                                        {/* <img
+                                                        <img
                                                             src="//cdn.shopify.com/s/files/1/0017/9653/8437/files/h1-logo-footer.png"
                                                             alt="hebes-globo"
-                                                            itemProp="logo"/> */}
+                                                            itemProp="logo"
+                                                        /> 
                                                     </figure>
                                                 </a>
                                             </div>
@@ -61,61 +82,54 @@ class Header extends Component {
                                                         <span className="component-target-text">Sign In</span>
                                                     </a>
                                                 </div>
-                                                <div className="top-dropdown currency">
+                                                <div className={`top-dropdown currency ${this.state.hover && 'hover'}`} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
                                                     <div className="parent aux-currency">
                                                         <a className="selected-currency" href="javascript:;">USD</a>
                                                         <ul id="currency">
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-USD current-currency"
+                                                                <a className="currency-link currency-USD current-currency"
                                                                     // onClick="jQuery('[name=currencies]').val('USD').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">USD</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-INR"
+                                                                <a className="currency-link currency-INR"
                                                                     //onClick="jQuery('[name=currencies]').val('INR').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">INR</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-GBP"
+                                                                <a className="currency-link currency-GBP"
                                                                     //onClick="jQuery('[name=currencies]').val('GBP').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">GBP</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-CAD"
+                                                                <a className="currency-link currency-CAD"
                                                                     //onClick="jQuery('[name=currencies]').val('CAD').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">CAD</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-AUD"
+                                                                <a className="currency-link currency-AUD"
                                                                     //onClick="jQuery('[name=currencies]').val('AUD').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">AUD</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-EUR"
+                                                                <a className="currency-link currency-EUR"
                                                                     //onClick="jQuery('[name=currencies]').val('EUR').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">EUR</span>
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a
-                                                                    className="currency-link currency-JPY"
+                                                                <a className="currency-link currency-JPY"
                                                                     //onClick="jQuery('[name=currencies]').val('JPY').change();"
                                                                     href="javascript:;">
                                                                     <span className="name">JPY</span>
@@ -123,9 +137,9 @@ class Header extends Component {
                                                             </li>
 
                                                         </ul>
-                                                        <div className="hidden-className">
+                                                        <div className="hidden-class">
                                                             <select
-                                                                className="currency-picker hidden-className"
+                                                                className="currency-picker hidden-class"
                                                                 name="currencies"
                                                                 style={styles.select}
                                                                 defaultValue="AUD">
@@ -141,8 +155,7 @@ class Header extends Component {
                                                     </div>
                                                     <i className="fa fa-caret-down" aria-hidden="true"></i>
                                                 </div>
-                                                <div
-                                                    className="header_component header_component--cart la_compt_iem la_com_action--cart ">
+                                                <div className="header_component header_component--cart la_compt_iem la_com_action--cart ">
                                                     <a rel="nofollow" className="component-target" href="/cart">
                                                         <i className="dl-icon-cart1"></i>
                                                         <span className="component-target-badget la-cart-count">0</span>
