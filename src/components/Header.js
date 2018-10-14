@@ -16,21 +16,24 @@ class Header extends Component {
         super(props);
         this.state = {
             hover: false,
+            showMenu: false,
         }
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.onMenuClick = this.onMenuClick.bind(this);
     }
-
     onMouseEnter() {
         this.setState({
             hover: true,
         });
     }
-
     onMouseLeave() {
         this.setState({
             hover: false,
         })
+    }
+    onMenuClick() {
+        console.log("!23");
     }
     render() {
         return (
@@ -57,8 +60,7 @@ class Header extends Component {
                                                 </a>
                                             </div>
                                             <div className="header-component-inner menu-v5 clearfix">
-                                                <div
-                                                    className="header_component header_component--link la_compt_iem la_com_action--aside_header">
+                                                <div className="header_component header_component--link la_compt_iem la_com_action--aside_header" onClick={this.onMenuClick}>
                                                     <a rel="nofollow" className="component-target" href="javascript:;">
                                                         <span className="icon--menu"></span>
                                                         <span className="icon--menu"></span>

@@ -9,6 +9,8 @@ import Aside from './components/Aside';
 import PageContainer from './components/PageContainer';
 import Footer from './components/Footer'
 
+
+
 class App extends Component {
   render() {
     return (
@@ -17,6 +19,7 @@ class App extends Component {
           <div className="page">
             <Header />
             <Aside />
+            
             <PageContainer />
           </div>
           <Footer />

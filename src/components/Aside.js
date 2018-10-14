@@ -171,7 +171,7 @@ class Aside extends Component {
                             </div>
                         </div>
                     </div>
-    </aside>
+                </aside>
             </div>
         );
     }
