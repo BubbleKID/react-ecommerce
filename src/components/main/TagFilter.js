@@ -14,12 +14,12 @@ class TagFilter extends Component {
                     <li>
                         <a title="Beauty" href="/collections/all/beauty">
                             Beauty
-                            </a>
+                        </a>
                     </li>
                     <li>
                         <a title="Globo" href="/collections/all/globo">
                             Globo
-                            </a>
+                        </a>
                     </li>
                 </ul>
             </div>

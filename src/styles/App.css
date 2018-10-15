@@ -69,6 +69,17 @@
        url("https://fonts.shopifycdn.com/lato/lato_i7.34d7f5a12391e5532b516b8bb3974f4cc3ee25ae.woff?&hmac=fdec22ee5f950c72191298c0b424d5e697c9d350bd97f2446d1a42594d4a6546") format("woff");
 }
 
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+         src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+         src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+               url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
 
 
 body,
@@ -7947,6 +7958,17 @@ button#HideRecoverPasswordLink {
 .section-page-header h1 {
     font-size: 48px;
     margin: 0 0 18px 0;
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.row .col-xs-12 {
+    width: 100%;
 }
 
 .section-page-header {
@@ -8608,8 +8630,8 @@ div#main-collection {
 }
 
 .wc-toolbar .wc-ordering p:after {
-    content: "\f107";
     font-family: FontAwesome;
+    content: "\F107";    
     padding-left: 5px;
     display: inline-block;
     line-height: normal;

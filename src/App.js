@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import './styles/App.css';
-import './styles/dl-icon.css';
-import './styles/main-section.css';
-import '@fortawesome/fontawesome-free/css/all.css';
+import React, { Component } from "react";
+import "@fortawesome/fontawesome-free/css/all.css";
+import "./styles/App.css";
+import "./styles/dl-icon.css";
+import "./styles/main-section.css";
 
-import Header from './components/Header';
-import Aside from './components/Aside';
-import PageContainer from './components/PageContainer';
-import Footer from './components/Footer'
-
-
+import Header from "./components/Header";
+import Aside from "./components/Aside";
+import PageContainer from "./components/PageContainer";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -19,7 +17,7 @@ class App extends Component {
           <div className="page">
             <Header />
             <Aside />
-            
+
             <PageContainer />
           </div>
           <Footer />
